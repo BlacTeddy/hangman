@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div id="container">
+        <h1 style="font-family: 'Courier New', Courier, monospace;">Hang Man</h1>
+        <div>
+            <div id="game">
+                <div id="alert" class="vis"><h2 ></h2></div>
+                <div id="radio-levels">
+                    <label>Difficulty:</label><br><span class="tab"></span>
+                    <input type="radio" id="beginner" name="level" value="beginner">
+                    <label for="beginner">Beginner</label>
+                    <input type="radio" id="easy" name="level" value="easy">
+                    <label for="easy">Easy</label>
+                    <input type="radio" id="medium" name="level" value="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="hard" name="level" value="hard">
+                    <label for="hard">Hard</label>
+                </div>
+                <div id="man">
+                    <span class="manbody" id="frame">Nos</span>
+                    <span class="manbody" id="head">Head</span>
+                    <span class="manbody" id="torso">Body</span>
+                    <span class="manbody" id="left-arm">Left arm</span>
+                    <span class="manbody" id="righ-arm">Right arm</span>
+                    <span class="manbody" id="left-leg">Left Leg</span>
+                    <span class="manbody" id="right-leg">Right Leg</span>
+                </div>
+            </div>
+        </div>
+        <div id="word">
+            
+            <span class="letter">N</span>
+            <span class="letter">E</span>
+            <span class="letter">W</span>
+            <span class="letter"></span>
+            <span class="letter">G</span>
+            <span class="letter">A</span>
+            <span class="letter">M</span>
+            <span class="letter">E</span>
+            <span class="letter">?</span>
+        </div>
+        <div id="keyboard">
+            <div>
+                <button class="key-btn" disabled>q</button>
+                <button class="key-btn" disabled >w</button>
+                <button class="key-btn" disabled >e</button>
+                <button class="key-btn" disabled >r</button>
+                <button class="key-btn" disabled >t</button>
+                <button class="key-btn" disabled >y</button>
+                <button class="key-btn" disabled >u</button>
+                <button class="key-btn" disabled >i</button>
+                <button class="key-btn" disabled>o</button>
+                <button class="key-btn" disabled >p</button>
+            </div>
+            <div>
+                <button class="key-btn" disabled >a</button>
+                <button class="key-btn" disabled >s</button>
+                <button class="key-btn" disabled >d</button>
+                <button class="key-btn" disabled >f</button>
+                <button class="key-btn" disabled >g</button>
+                <button class="key-btn" disabled >h</button>
+                <button class="key-btn" disabled >j</button>
+                <button class="key-btn" disabled>k</button>
+                <button class="key-btn" disabled>l</button>
+            </div>
+            <div>
+                <button class="key-btn" disabled >z</button>
+                <button class="key-btn" disabled >x</button>
+                <button class="key-btn" disabled >c</button>
+                <button class="key-btn" disabled >v</button>
+                <button class="key-btn" disabled >b</button>
+                <button class="key-btn" disabled >n</button>
+                <button class="key-btn" disabled >m</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="dist/src/index.js"></script>
+</body>
+</html>
